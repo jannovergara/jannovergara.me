@@ -17,6 +17,8 @@ Great projects need efficient tools. Jenkins specializes in build automation for
 
 To download Jenkins, visit the [site](https://www.jenkins.io/). I downloaded Jenkins for Mac. Installation went smooth and it opens Safari browser as its main window. It will need an admin user to initiate integration, so a quick registration setup went through.
 
+![Jenkins setup](./2.png)
+
 TODO:
 - config setup
 - build script
