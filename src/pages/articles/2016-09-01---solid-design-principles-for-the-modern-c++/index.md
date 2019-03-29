@@ -10,7 +10,7 @@ tags:
   - "c++"
 description: "How does the SOLID design principle change in the modern C++ era?"
 ---
-This is a series of posts explaining the fundamental principles of object-oriented programming for the modern C++ environment.
+This is a series of posts explaining the fundamental principles of object-oriented programming to the modern C++ developement.
 
 ![Looking at a high level design.](./1.jpg)<sub>Photo from Unsplash</sub>
 
@@ -21,10 +21,10 @@ Sounds easy but the thing with defining a class is the tendency of most develope
 Having a good understanding of SRP, basically a class would be defined with an intentional knowledge of its role, but eventually, there would be unnecessary instances to perform modifications on it. An extension would be fine, but altering the design of the class would not conform with OCP.
 
 ### Liskov substition principle
-The principle suggests that objects of a base class can be substituted with objects of its derived classes without breaking the applicaiton. This means that the objects of derived classes behave in a similar way as the base classes.
+The principle suggests that objects of a base class can be substituted with objects of its derived classes without breaking the application. This means that the objects of derived classes behave in a way similar to the base class.
 
 ### Interface segregation principle
-The ability to separate into much smaller interfaces from a bigger interface is the main characteristic of ISP. It splits the interface packed with methods sometimes unnecessary into separate interfaces.
+The ability to separate into much smaller interfaces from a bigger interface is the main characteristic of ISP. It splits the interface, sometimes packed with diverse methods, into separate interfaces.
 
 ### Dependency inversion principle
-Both the high-level and low-level modules depend on abstractions, and not from each other. This results in the inversion thinking that low-level should depend on high-level etc.
+Both the high-level and low-level modules depend on abstractions, and not from each other. This results in the inversion thinking that low-level modules should depend on high-level etc.

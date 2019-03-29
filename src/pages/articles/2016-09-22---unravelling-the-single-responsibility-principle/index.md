@@ -14,7 +14,7 @@ In a nutshell, "A class should only have a single reason to change." There is se
 
 ![SRP.](./1.jpg)<sub>Photo from Unsplash</sub>
 
-We can describe this in a more C++ software approach. Say we want to create a _Diary_ class that would need _title_ and _entries_ attributes. Also we want to _add_ entries to our _Diary_ and eventually _save_ them.
+We can describe this in a more C++ approach. Say we want to create a _Diary_ class that would need _title_ and _entries_ attributes. Also we want to _add_ entries to our _Diary_ and eventually _save_ them.
 
 ```cpp
 #include <iostream>
@@ -51,7 +51,7 @@ int main()
 {
     Diary diary{"Dear Diary"};
     diary.add("I broke my arm this morning.. ");
-    diary.add("From 150 lbs to 120lbs!");
+    diary.add("From 150 lbs to 120 lbs!");
 
     diary.save("diary.txt");
 
@@ -59,7 +59,7 @@ int main()
 }
 ```
 
-However on a design POV, we can notice that the _save_ method is a persistence functionality and therefore is a separate concern. We can then move the _save_ implementation to another class. Let's define a _PersistenceManager_ class that would handle this change.
+However on a design perspective, we notice that the _save_ method is a persistence functionality and therefore is a separate concern. We can then move the _save_ implementation to another class. Let's define a _PersistenceManager_ class that would handle this change.
 
 ```cpp
 struct PersistenceManager
@@ -79,7 +79,7 @@ int main()
 {
     Diary diary{"Dear Diary"};
     diary.add("I broke my arm this morning.. ");
-    diary.add("From 150 lbs to 120lbs!");
+    diary.add("From 150 lbs to 120 lbs!");
 
     PersistenceManager pm;
     pm.save(diary, "diary.txt");
