@@ -6,8 +6,9 @@ draft: false
 path: "/posts/continuous-integration-workflow-for-c++-using-jenkins/"
 category: "Software tools"
 tags:
-  - "ci"
+  - "ci/cd"
   - "build automation"
+  - "jenkins"
 description: "Software build automation"
 ---
 

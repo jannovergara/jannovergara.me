@@ -1,5 +1,5 @@
 ---
-title: How to create, merge and delete a branch in github
+title: How to create, merge and delete a branch in Github
 date: "2017-03-29T15:12:32.169Z"
 layout: post
 draft: false
@@ -8,7 +8,27 @@ category: "Software tools"
 tags:
   - "git"
   - "branch"
-description: "In this article we present a way to scripting HTML using C++ interfaces with a focus on writing code following the builder design pattern."
+description: "There will always be an instance that a developer will need to create a different version of an app either with additional features or just a functionality that he wants to test. Creating a branch from the master branch will help organize the development process."
 ---
+For example from an existing _master_ branch of a _calculator_ application, a developer wants to add new features that will improve its existing functionality. He needs to create a branch from _master_ and implement all the new functionality into that branch, then eventually merging all those modifications back to the _master_ branch. First clone the _master_,
+```sh
+$ git clone https://www.github.io/jannovergara/calculator.git
+$ cd calculator
+```
 
 ![Git branch](./1.jpg) <sub>Photo from Unsplash</sub>
+
+Next, create a branch from the _master_ branch. Let's name it as *calculator\_new_version*.
+```sh
+$ git checkout -b calculator_new_version
+```
+Perform modifications on this branch that will reflect all the new functionalities. When the developer realizes that the modifications are enough, he can _push_ the modifications via _git add_, _git commit_ and _git push_ commands. After which, he can then merge *calculator\_new_version* to the _master_ branch.
+```sh
+$ git checkout master
+$ git merge -b calculator_new_version
+```
+He may want to delete *calculator\_new_version* to keep the repository nice and clean.
+```sh
+$ git branch -d calculator_new_version
+```
+If there are conflicts during the _merge_, the developer needs to manually resolve the conflicts. When there are no more issues, the merged source code of the _calculator_ app now contains the new features from *calculator\_new_version*.

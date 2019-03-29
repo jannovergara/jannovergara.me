@@ -4,10 +4,10 @@ layout: page
 path: "/about"
 ---
 
-I find it very interesting to work on huge C++ code bases. When I see these code bases, my analytical and critical minds suddenly become perfectly in sync, together with the creative juices to smoothly design server engines. Often you can see me working as below:
+I find it very interesting to work on diverse C++ applications. The thrill of creating various softwares makes me deeply satisfied and fulfilled. The combination of the analytical and creative parts of my brain suddenly become perfectly matched, together with the sound logical flow to smoothly design server applications. Often you can see me working similar as below:
 
-![About me](./1.jpg)
+![About me](./1.jpg) <sub>Photo from Unsplash</sub>
 
-*I usually write codes on my Macbook. Oh I remember, I still need to find a C++ sticker for it.*
+*I usually write codes on my Macbook. Oh I remember, I still need to find C++ stickers to vandal my Mac.*
 
-Aside from physics, coding is my next favorite paradigm especially when it comes to creating systems applications for embedded devices, crunching data with Python and blogging with Javascript.
+Aside from physics, coding is my next favorite paradigm especially when it comes to creating systems applications for embedded devices, crunching data with Python and writing technical static pages with Javascript.
