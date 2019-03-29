@@ -8,11 +8,11 @@ category: "Design Principles"
 tags:
   - "design principle"
   - "c++"
-description: "How does the SOLID design principles change in the modern C++?"
+description: "How does the SOLID design principle change in the modern C++ era?"
 ---
 This is a series of posts explaining the fundamental principles of object-oriented programming for the modern C++ environment.
 
-![Looking at a high level design. Photo from Unsplash](./1.jpg)
+![Looking at a high level design.](./1.jpg)<sub>Photo from Unsplash</sub>
 
 ### Single responsibility principle
 Sounds easy but the thing with defining a class is the tendency of most developers to add a lot of functionalities inside it. A good question to always remember when designing is, "What is main the responsibility of your class/component/microservice?" With this, it would be much easier to explain and understand the role of the class than having a lot of functions.

@@ -8,11 +8,11 @@ category: "Design Principles"
 tags:
   - "design principle"
   - "c++"
-description: "Getting to know SRP in a more detailed way."
+description: "Getting to know SRP in a more detailed perspective."
 ---
 In a nutshell, "A class should only have a single reason to change." There is separation of distinct concerns in classes handling different, independent tasks or problems.
 
-![SRP. Photo from Unsplash](./1.jpg)
+![SRP.](./1.jpg)<sub>Photo from Unsplash</sub>
 
 We can describe this in a more C++ software approach. Say we want to create a _Diary_ class that would need _title_ and _entries_ attributes. Also we want to _add_ entries to our _Diary_ and eventually _save_ them.
 
@@ -88,4 +88,4 @@ int main()
 }
 ```
 
-With this, we have separated the _save_ method from the _Diary_ class, which now has the primary responsibility of adding diary entries.
+With this design, we have separated the _save_ method from the _Diary_ class, which now has the primary responsibility of adding diary entries.

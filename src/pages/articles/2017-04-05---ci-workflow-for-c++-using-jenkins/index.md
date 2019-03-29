@@ -9,7 +9,7 @@ tags:
   - "ci/cd"
   - "build automation"
   - "jenkins"
-description: "Software build automation"
+description: "A software development process involves multiple iterations of tests, builds and deployments. Jenkins allows seamless integration of these processes providing efficiency and value."
 ---
 
-![Jenkins](./1.jpg) <sub>Photo from Unsplash</sub>
+![Jenkins](./1.jpg)<sub>Photo from Unsplash</sub>
