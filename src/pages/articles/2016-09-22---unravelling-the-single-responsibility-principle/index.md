@@ -72,7 +72,7 @@ struct PersistenceManager
   }
 };
 ```
-and then calling in the main(),
+and then calling in the _main()_,
 
 ```cpp
 int main()
