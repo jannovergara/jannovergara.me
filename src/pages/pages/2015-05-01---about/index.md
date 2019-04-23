@@ -8,6 +8,6 @@ I find it very interesting to work on diverse C++ applications. The thrill of cr
 
 ![About me](./1.jpg) <sub>Photo from Unsplash</sub>
 
-*I usually write codes on my Macbook. Oh I remember, I still need to find C++ stickers to vandal my Mac.*
+*I usually write codes on my Macbook. It's a classic mid-2012 Mac but still serves me well. Help me find C++ stickers for it!* :grin:
 
 Aside from physics, coding is my next favorite hobby especially when it comes to creating systems applications for embedded devices, crunching data with Python and writing technical static web pages with Javascript.
