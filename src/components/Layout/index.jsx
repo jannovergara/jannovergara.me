@@ -14,7 +14,7 @@ class Layout extends React.Component {
             { charSet: 'x-ua-compatible' },
             { httpEquiv: 'x-ua-compatible', content: 'ie=edge' },
             { name: 'viewport', content: 'width=device-width, initial-scale=1, shrink-to-fit=no' },
-            { name: 'keywords', content: 'Janno, Vergara, Janno Vergara, Physics, C++, Python, Javascript' },
+            { name: 'keywords', content: 'Janno, Vergara, Janno Vergara, Physics, C++, cpp, initiative, modern, software, cpp initiative, modern cpp, modern c++, Python, Javascript' },
             { name: 'google-site-verification', content: 'WYGvvZM3YJeHXNebajyieuAWbd0yoWsamZNkkhF5hAE' },
             { name: 'apple-mobile-web-app-title', content: 'https://www.jannovergara.me' },
             { name: 'application-name', content: 'https://www.jannovergara.me' },
