@@ -10,6 +10,7 @@ tags:
   - "C++"
   - "Python"
   - "Bash scripting"
+  - "R"
 description: "Understanding RegEx on different languages"
 ---
 It would take a healthy amount of time before a developer can be familiar with RegEx. In this post I'll show how to do RegEx on different programming languages.
@@ -42,6 +43,16 @@ $ python
 >>> infile = open('sample.txt', 'r')
 >>> grep(grep(infile, "dog", i=True), "cat", v=True)
 ['A great white dog.', "Dogs are man's bestfriend."]
+```
+
+In R,
+```
+$ r
+> infile <- read.delim("sample.txt", header=FALSE)
+> dogscats <- lapply(infile, function(x) grep("dog", x, ignore.case=TRUE, value=TRUE))
+> lapply(dogscats, function(x) grep("cat", x, ignore.case=TRUE, value=TRUE, invert=TRUE))
+$V1
+[1] "A great white dog."         "Dogs are man's bestfriend."
 ```
 
 Cheers!

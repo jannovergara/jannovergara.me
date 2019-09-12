@@ -4,7 +4,7 @@ layout: page
 path: "/about"
 ---
 
-I find it very interesting to work on diverse C++ applications. The thrill of creating various softwares makes me deeply satisfied and fulfilled. The synergy work of the analytical and creative parts of my cerebral cortex suddenly become perfectly matched, together with the sound logic flow, to smoothly design server applications. Often you can see me working similar as below:
+I find it very interesting to work on diverse C++ applications. The thrill of creating various software projects make me feel deeply satisfied and fulfilled. The synergy work of the analytical and creative parts of my cerebral cortex become perfectly matched, together with the sound logic flow, to smoothly design client, server and database applications. Often you can see me working similar as below:
 
 ![About me](./1.jpg) <sub>Photo from Unsplash</sub>
 
