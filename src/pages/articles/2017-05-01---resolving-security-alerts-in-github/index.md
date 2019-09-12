@@ -4,7 +4,7 @@ date: "2017-05-01T10:02:05.125Z"
 layout: post
 draft: false
 path: "/posts/resolving-security-alerts-in-github/"
-category: "Workflow"
+category: "Software tools"
 tags:
   - "Github"
 description: "Updating vulnerable dependencies"
