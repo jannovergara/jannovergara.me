@@ -51,7 +51,8 @@
     "react": "^16.9.0",
     "react-disqus-comments": "^1.2.0",
     "react-dom": "^16.9.0",
-    "react-helmet": "^5.2.1"
+    "react-helmet": "^5.2.1",
+    "set-value": "^3.0.1"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",
