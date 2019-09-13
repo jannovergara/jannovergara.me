@@ -4,7 +4,7 @@ const pxtorem = require('postcss-pxtorem')
 module.exports = {
   siteMetadata: {
     url: 'https://jannovergara.me',
-    title: 'A Modern C++, Fullstack and Machine Learning Software Initiative - Janno Vergara\'s Blog',
+    title: 'A Modern Software Initiative - Janno Vergara\'s Blog on C/C++, Fullstack Development and Machine Learning',
     subtitle:
       'Physics. I usually write C/C++ codes, normally Python, often Javascript.',
     copyright: '2019 © All rights reserved.',
