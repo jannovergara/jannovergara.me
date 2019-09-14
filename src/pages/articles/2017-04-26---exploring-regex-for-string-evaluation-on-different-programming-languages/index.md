@@ -15,7 +15,7 @@ description: "Understanding RegEx on different languages"
 ---
 It would take a healthy amount of time before a developer can be familiar with RegEx. In this post I'll show how to do RegEx on different programming languages.
 
-![Travis-CI](./1.jpg)<sub>Photo from Unsplash</sub>
+![RegEx](./1.jpg)<sub>Photo from Unsplash</sub>
 
 **The challenge**: Find from a collection of words or phrases, the word or phrase that contains the word "dog" but not "cat".
 
