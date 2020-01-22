@@ -16,9 +16,3 @@ To _delete remotes/origin/{branch}_ from local repository, use:
 ```sh
 git remote prune origin
 ```
-
-First clone the _master_,
-```sh
-$ git clone https://www.github.io/jannovergara/calculator.git
-$ cd calculator
-```
