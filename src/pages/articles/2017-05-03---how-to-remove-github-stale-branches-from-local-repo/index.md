@@ -1,5 +1,5 @@
 ---
-title: How to create, merge and delete a branch in Github
+title: How to remove Github stale branches from local repo
 date: "2017-05-03T05:01:24.652Z"
 layout: post
 draft: false
