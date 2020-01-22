@@ -8,7 +8,7 @@ category: "Software tools"
 tags:
   - "ci/cd"
   - "build automation"
-  - "jenkins"
+  - "Jenkins"
 description: "A software development process involves multiple iterations of tests, builds and deployments. Jenkins allows seamless integration of these processes providing efficiency and value."
 ---
 Great projects need efficient tools. Jenkins specializes in build automation for continuous integration in software development.

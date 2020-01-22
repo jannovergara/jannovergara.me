@@ -9,7 +9,7 @@ tags:
   - "C"
   - "C++"
   - "Python"
-  - "Bash scripting"
+  - "bash scripting"
   - "R"
 description: "Understanding RegEx on different languages"
 ---
