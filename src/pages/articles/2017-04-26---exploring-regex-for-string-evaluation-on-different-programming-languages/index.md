@@ -29,14 +29,14 @@ There's a cat on the table.
 
 
 In bash,  
-```
+```sh
 $ grep -i "dog" sample.txt | grep -v -i "cat"
 A great white dog.
 Dogs are man's bestfriend.
 ```
 
 In python,  
-```
+```python
 $ sudo pip install grepfunc
 $ python
 >>> from grepfunc import grep
@@ -46,7 +46,7 @@ $ python
 ```
 
 In R,
-```
+```r
 $ r
 > infile <- read.delim("sample.txt", header=FALSE)
 > dogscats <- lapply(infile, function(x) grep("dog", x, ignore.case=TRUE, value=TRUE))
