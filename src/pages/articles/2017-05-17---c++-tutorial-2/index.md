@@ -160,7 +160,7 @@ int main() {
 Compile and run,
 
 ```bash
-$ g++ main.cpp Fighter.cpp Battle.cpp
+$ g++ -std=c++11 main.cpp Fighter.cpp Battle.cpp
 $ ./a.out
 Tom attacks Jerry and deals 0 damage.
 Jerry is down to 120
