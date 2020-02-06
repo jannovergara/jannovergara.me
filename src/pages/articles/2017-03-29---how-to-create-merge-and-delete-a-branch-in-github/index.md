@@ -6,8 +6,7 @@ draft: false
 path: "/posts/how-to-create-merge-and-delete-a-branch-in-github/"
 category: "Software tools"
 tags:
-  - "git"
-  - "branch"
+  - "Git"
 description: "There will always be an instance that a developer will need to create a different version of an app either with additional features or with a functionality that he wants to test. Creating a branch from the master branch will help organize the development process."
 ---
 For example from an existing _master_ branch of a _calculator_ application, a developer wants to add new features that will improve the existing functionality. He needs to create a branch from _master_ and implement all the new functionality into that branch, then eventually merging all those modifications back to the _master_ branch.

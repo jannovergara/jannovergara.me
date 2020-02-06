@@ -6,8 +6,8 @@ draft: false
 path: "/posts/continuous-integration-workflow-using-jenkins/"
 category: "Software tools"
 tags:
-  - "ci/cd"
-  - "build automation"
+  - "CI/CD"
+  - "Build Automation"
   - "Jenkins"
 description: "A software development process involves multiple iterations of tests, builds and deployments. Jenkins allows seamless integration of these processes providing efficiency and value."
 ---

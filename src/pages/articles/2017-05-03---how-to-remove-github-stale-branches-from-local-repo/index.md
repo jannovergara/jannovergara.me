@@ -6,7 +6,7 @@ draft: false
 path: "/posts/how-to-remove-github-stale-branches-from-local-repo/"
 category: "Software tools"
 tags:
-  - "git"
+  - "Git"
 description: "At some point during code development, there will come a time to clean history from the local repository. This git tool will do the job."
 ---
 ![Git branch](./1.jpg)<sub>Photo from Unsplash</sub>

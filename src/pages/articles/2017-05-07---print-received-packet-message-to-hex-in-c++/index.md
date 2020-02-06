@@ -6,7 +6,7 @@ draft: false
 path: "/posts/print-received-packet-message-to-hex-in-c++/"
 category: "Code"
 tags:
-  - "c++"
+  - "C++"
 description: "Displaying hexadecimal numbers are surprisingly tricky. This is a quick reference on how to display hex numbers."
 ---
 ![Git branch](./1.jpg)<sub>Photo from Unsplash</sub>
