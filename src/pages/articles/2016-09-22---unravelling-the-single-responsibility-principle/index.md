@@ -7,6 +7,7 @@ path: "/posts/unravelling-the-single-responsibility-principle/"
 category: "Design Principles"
 tags:
   - "C++"
+  - "C++11"
 description: "Getting to know SRP in a more detailed perspective."
 ---
 In a nutshell, "A class should only have a single reason to change." There is separation of distinct concerns in classes handling different, independent tasks or problems.
