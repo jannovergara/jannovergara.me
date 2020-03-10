@@ -9,7 +9,7 @@ tags:
   - "Git"
 description: "At some point during code development, there will come a time to clean history from the local repository. This git tool will do the job."
 ---
-![Git branch](./1.jpg)<sub>Photo from Unsplash</sub>
+![Stale](./1.jpg)<sub>Photo from Unsplash</sub>
 
 To _delete remotes/origin/{branch}_ from local repository, use:
 

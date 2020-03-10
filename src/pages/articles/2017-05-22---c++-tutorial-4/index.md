@@ -13,7 +13,7 @@ description: "Using C++ classes in POSIX pthread_create function."
 ---
 In this tutorial, we will show how to implement a basic POSIX pthread_create threading using C++ classes.
 
-![Git branch](./1.jpg)<sub>Photo from Unsplash</sub>
+![Tutorial4](./1.jpg)<sub>Photo from Unsplash</sub>
 
 C++ code.
 
