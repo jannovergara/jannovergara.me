@@ -1,5 +1,11 @@
 # jannovergara.me
-Personal website
+
+Content
+- C++ Design Principles
+- C++ Standard Library
+- Modern C++
+- Advanced STL
+- Advanced C++
 
 Thanks to
 [lumen](https://github.com/alxshelepenok/gatsby-starter-lumen) template, initiated
