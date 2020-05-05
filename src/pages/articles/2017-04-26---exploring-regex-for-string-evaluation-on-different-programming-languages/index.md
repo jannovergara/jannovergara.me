@@ -7,7 +7,7 @@ path: "/posts/exploring-regex-for-string-evaluation-on-different-programming-lan
 category: "RegEx"
 tags:
   - "C"
-  - "C++"
+  - "C++03"
   - "Python"
   - "bash scripting"
   - "R"

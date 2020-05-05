@@ -6,7 +6,7 @@ draft: false
 path: "/posts/solid-design-principles-for-the-modern-c++/"
 category: "Design Principles"
 tags:
-    - "C++"
+    - "C++03"
 description: "How does the SOLID design principle change in the modern C++ era?"
 ---
 This is a series of entries explaining the fundamental principles of object-oriented programming to the modern C++ development. How to design classes? How to design objects? How to design relationships between classes and objects?

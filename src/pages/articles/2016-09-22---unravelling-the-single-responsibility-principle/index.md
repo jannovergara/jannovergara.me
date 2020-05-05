@@ -6,7 +6,7 @@ draft: false
 path: "/posts/unravelling-the-single-responsibility-principle/"
 category: "Design Principles"
 tags:
-  - "C++"
+  - "C++03"
   - "C++11"
 description: "Getting to know SRP in a more detailed perspective."
 ---
