@@ -6,16 +6,16 @@ draft: false
 path: "/posts/solid-design-principles-for-the-modern-c++/"
 category: "Design Principles"
 tags:
-    - "C++03"
-description: "How does the SOLID design principle change in the modern C++ era?"
+    - "SOLID"
+description: "How does the SOLID design principle change in the modern software development?"
 ---
 This is a series of entries explaining the fundamental principles of object-oriented programming to the modern C++ development. How to design classes? How to design objects? How to design relationships between classes and objects?
 
-Why do we need design? It is because the only consistent thing about a software is that it **changes**. Many times, clients do not know their requirements. Technology also change, and it change a lot. It is always going to change. So designers, developers have to accommodate future changes while they are creating the present day software.
+Why do we need a design? It is because the only consistent thing about a software is that it always **change**. Many times, clients do not know their requirements. Technology also change, and it changes a lot. It is always going to change. So designers and developers have to accommodate future changes while they are creating the present day software.
 
-All this design philosophy is based on three things:
-1. DRY - Do not repeat yourself. It is one of the most important things. It is based on the knowledge that software is changing. For example, imagine that a piece of code is duplicated across five different classes, five different functions. And now, that code needs to be changed. Where do you change it? It will then be changed at five different places where the code was duplicated. Instead, if that similar piece of code was extracted into a single and reusable component, it will only be changed at a single place only.
-2. Divide and Conquer - Whenever the file size of the code gets bigger and bigger, think about divide and conquer. It is also influenced by the philosophy that the software will change. There will be an added code, added functionality, remove some, and again add something new.
+All these design philosophies are based on three things:
+1. DRY - Do not repeat yourself. It is one of the most important things. It is based on the knowledge that software is constantly changing. For example, imagine that a piece of code is duplicated across five different classes, five different functions. And now, that code needs to be changed. Where will it be modified? It will then be modified at five different places where the code was duplicated. However, if that similar piece of code was extracted into a single and reusable component, it will only be modified at a single place only.
+2. Divide and Conquer - Whenever the file size of the code gets bigger and bigger, think about the concept of divide and conquer. It is influenced by the philosophy that the software will constantly change. There will be an additional code, added functionality, remove some code, and again add something new to the existing code base.
 3. Expect Change
 
 Accordingly, the designer or the developer will have the the coding habits, design habits with the above philosophy in mind. The code will have to accomodate change without destroying the existing working functionality.
