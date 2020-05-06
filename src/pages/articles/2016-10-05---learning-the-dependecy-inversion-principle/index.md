@@ -8,7 +8,7 @@ category: "Design Principles"
 tags:
   - "SOLID"
   - "C++03"
-description: "In this entry, we will see the relevance of multiple inheritance and pure virtual functions from DIP."
+description: "In this entry, we will see the relevance of multiple inheritance and pure virtual functions to DIP."
 ---
 This principle is more straight-forward than the other SOLID principles because it relates to a real-world pattern.
 
