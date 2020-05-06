@@ -6,11 +6,12 @@ draft: false
 path: "/posts/unravelling-the-single-responsibility-principle/"
 category: "Design Principles"
 tags:
-  - "C++03"
+  - "SOLID"
   - "C++11"
 description: "Getting to know SRP in a more detailed perspective."
 ---
-In a nutshell, **"A class should only have a single reason to change."** There is separation of distinct concerns in classes handling different, independent tasks or problems.
+In a nutshell, **"A class should only have a single reason to change."** There is separation of distinct concerns in classes handling different, independent tasks or problems. Every module or class should have a responsibility over a single part of the functionality provided by the software, and that responsiblity should be entirely encapsulated by the class.
+
 
 ![SRP.](./1.jpg)<sub>Photo from Unsplash</sub>
 

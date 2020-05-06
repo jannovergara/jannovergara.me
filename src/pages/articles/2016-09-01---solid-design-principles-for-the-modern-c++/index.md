@@ -22,13 +22,15 @@ Accordingly, the designer or the developer will have the the coding habits, desi
 
 On that note, let us discuss some guidelines known as the SOLID principles for OOP.
 
-![Looking at a high level design.](./1.jpg)<sub>Photo from Unsplash</sub>
+SOLID principles are the design principles that enable us to manage most of the software design problems. It is an acronym for five design principles intended to make software designs more understandable, flexible and maintainable. Another benefit of SOLID principle is that it will make the code easier to read and understand, thus spending less time figuring out what it does and spend more time actually developing the solution. The principles are a part of the many principles promoted by Robert Martin and named by Michael Feathers.
+
+![High-level design.](./1.jpg)<sub>Photo from Unsplash</sub>
 
 ### Single responsibility principle
-Sounds easy but the thing with defining a class is the tendency of most developers to add a lot of functionalities inside it. A good question to always remember when designing is, "What is main the responsibility of your class/component/microservice?" With this, it would be much easier to explain and understand the role of the class than having a lot of functions.
+Sounds easy but the thing with defining a class is the tendency of most developers to add a lot of functionalities inside it. A good question to always remember when designing is, "What is main the responsibility of your class/component/microservice?" A class should have one, and only one reason to change.
 
 ### Open for extension, closed for modification
-Having a good understanding of SRP, a class would basically be defined with an intentional knowledge of its role, but eventually, there would be unnecessary instances to perform modifications on it. An extension would be fine, but altering the design of the class would not conform with OCP.
+Having a good understanding of SRP, a class can basically be defined with an intentional knowledge of its role, however, there can be instances to perform modifications to it. An extension is fine, but altering the design of the class would not conform to OCP.
 
 ### Liskov substition principle
 The principle suggests that objects of a base class can be substituted with objects of its derived classes without breaking the application. This means that the objects of derived classes behave in a way similar to the base class.
