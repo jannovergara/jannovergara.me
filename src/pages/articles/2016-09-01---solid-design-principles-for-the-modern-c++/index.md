@@ -32,7 +32,7 @@ Sounds easy but the thing with defining a class is the tendency of most develope
 ### Open for extension, closed for modification
 Having a good understanding of SRP, a class can basically be defined with an intentional knowledge of its role, however, there can be instances to perform modifications to it. An extension is fine, but altering the design of the class would not conform to OCP.
 
-### Liskov substition principle
+### Liskov substitution principle
 The principle suggests that objects of a base class can be substituted with objects of its derived classes without breaking the application. This means that the objects of derived classes behave in a way similar to the base class.
 
 ### Interface segregation principle
