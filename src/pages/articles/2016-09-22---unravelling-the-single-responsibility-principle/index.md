@@ -7,86 +7,97 @@ path: "/posts/unravelling-the-single-responsibility-principle/"
 category: "Design Principles"
 tags:
   - "SOLID"
-  - "C++11"
+  - "C++03"
 description: "Getting to know SRP in a more detailed perspective."
 ---
 In a nutshell, **"A class should only have a single reason to change."** There is separation of distinct concerns in classes handling different, independent tasks or problems. Every module or class should have a responsibility over a single part of the functionality provided by the software, and that responsiblity should be entirely encapsulated by the class.
 
-
 ![SRP.](./1.jpg)<sub>Photo from Unsplash</sub>
 
-We can describe this in a more C++ approach. Say we want to create a _Diary_ class that would need _title_ and _entries_ attributes. Also we want to _add_ entries to our _Diary_ and eventually _save_ them.
+We can describe this in a more C++ approach. Let's consider creating a game hero class with attributes, abilities and movement.
+
+#### Bad example
 
 ```cpp
-#include <iostream>
-#include <fstream>
-#include <string>
-#include <vector>
-using namespace std;
+class Hero {
+private:
+  int stren_, agil_, intel_;
+  int health_, level_;
+  
+public:
+  // Hero attributes
+  int GetStrength() const { return stren_; }
+  void SetStrength(int stren){ stren_ = stren; }
+  int GetAgility() const { return agil_; }
+  void SetAgility(int agil){ agil_ = agil; }
+  int GetIntelligence() const { return intel_; }
+  void SetIntelligence(int intel){ intel_ = intel; }
 
-struct Diary
-{
-    string title;
-    vector<string> entries;
+  int GetHealth() const { return health_; }
+  void SetHealth(int health){ health_ = health; }
+  int GetLevel() const { return level_; }
+  void SetLevel(int level){ level_ = level; }
 
-    explicit Diary(const string &title) : title{title} {}
+  // Hero ability
+  void LevelUp();
+  void Attack();
+  void Heal();
 
-    void add(const string &entry);
-    void save(const string &filename);
-};
-
-void Diary::add(const string &entry)
-{
-    static int count = 1;
-    entries.push_back(to_string(count++) + ": " + entry);
-}
-
-void Diary::save(const string &filename)
-{
-    ofstream ofs(filename);
-    for (auto &s : entries)
-        ofs << s << endl;
-}
-
-int main()
-{
-    Diary diary{"Dear Diary"};
-    diary.add("I broke my arm this morning.. ");
-    diary.add("From 150 lbs to 120 lbs!");
-
-    diary.save("diary.txt");
-
-    return 0;
-}
-```
-
-However on a design perspective, we notice that the _save_ method is a persistence functionality and therefore is a separate concern. We can then move the _save_ implementation to another class. Let's define a _PersistenceManager_ class that would handle this change.
-
-```cpp
-struct PersistenceManager
-{
-  static void save(const Diary &d, const string &filename)
-  {
-    ofstream ofs(filename);
-    for (auto &s : d.entries)
-      ofs << s << endl;
-  }
+  // Hero movement
+  void Blink();
+  void Teleport();
 };
 ```
-and then calling in the _main()_,
+
+At first glance, this class might look correctly written. However, this class violates the single responsibility principle, in that it has other reasons to change. _LevelUp()_, _Attack()_ and _Heal()_ are for modifying the attributes of the hero (e.g. _level_, _health_, _stren_, _agil_ and _intel_), while the _Blink()_ and _Teleport()_ are for the hero's movement. In a way, there is a mixup of how the hero's attributes will change and how the logic of the hero's movement is going to shift.
+
+To fix this, we can write classes to separate the hero's abilities and movement.
+
+#### Good example
 
 ```cpp
-int main()
-{
-    Diary diary{"Dear Diary"};
-    diary.add("I broke my arm this morning.. ");
-    diary.add("From 150 lbs to 120 lbs!");
+class Hero {
+private:
+  std::string name_;
+  int stren_, agil_, intel_;
+  int health_, level_;
 
-    PersistenceManager pm;
-    pm.save(diary, "diary.txt");
+  double pos_x_, pos_y_;
+public:
 
-    return 0;
-}
+  std::string GetName() const {return name_; }
+  void SetName(std::string name){ name_ = name; }
+
+  int GetStrength() const { return stren_; }
+  void SetStrength(int stren){ stren_ = stren; }
+  int GetAgility() const { return agil_; }
+  void SetAgility(int agil){ agil_ = agil; }
+  int GetIntelligence() const { return intel_; }
+  void SetIntelligence(int intel){ intel_ = intel; }
+
+  int GetHealth() const { return health_; }
+  void SetHealth(int health){ health_ = health; }
+  int GetLevel() const { return level_; }
+  void SetLevel(int level){ level_ = level; }
+
+  double GetPosX() const { return pos_x_; }
+  void SetPosX(double pos_x){ pos_x_ = pos_x; }
+  double GetPosY() const { return pos_y_; }
+  void SetPosY(double pos_y){ pos_y_ = pos_y; }
+};
+
+class HeroAbility {
+public:  
+  void LevelUp(Hero &hero);
+  void Attack(Hero &hero);
+  void Heal(Hero &hero);
+};
+
+class HeroMovement {
+public:  
+  void Blink(Hero &hero);
+  void Teleport(Hero &hero);
+};
 ```
 
-With this design, we have separated the _save_ method from the _Diary_ class, which now has the primary responsibility of adding diary entries.
+With this design, we are able to separate the hero's attributes, abilities and movement. If in any case that there will be changes in the logic of the movement, we will only be focusing our modifications to _HeroMovement_ class instead of _Hero_.

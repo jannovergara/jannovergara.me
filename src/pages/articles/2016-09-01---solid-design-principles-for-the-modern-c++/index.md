@@ -13,6 +13,8 @@ This is a series of entries explaining the fundamental principles of object-orie
 
 Why do we need a design? It is because the only consistent thing about a software is that it always **change**. Many times, clients do not know their requirements. Technology also change, and it changes a lot. It is always going to change. So designers and developers have to accommodate future changes while they are creating the present day software.
 
+![High-level design.](./1.jpg)<sub>Photo from Unsplash</sub>
+
 All these design philosophies are based on three things:
 1. DRY - Do not repeat yourself. It is one of the most important things. It is based on the knowledge that software is constantly changing. For example, imagine that a piece of code is duplicated across five different classes, five different functions. And now, that code needs to be changed. Where will it be modified? It will then be modified at five different places where the code was duplicated. However, if that similar piece of code was extracted into a single and reusable component, it will only be modified at a single place only.
 2. Divide and Conquer - Whenever the file size of the code gets bigger and bigger, think about the concept of divide and conquer. It is influenced by the philosophy that the software will constantly change. There will be an additional code, added functionality, remove some code, and again add something new to the existing code base.
@@ -23,8 +25,6 @@ Accordingly, the designer or the developer will have the the coding habits, desi
 On that note, let us discuss some guidelines known as the SOLID principles for OOP.
 
 SOLID principles are the design principles that enable us to manage most of the software design problems. It is an acronym for five design principles intended to make software designs more understandable, flexible and maintainable. Another benefit of SOLID principle is that it will make the code easier to read and understand, thus spending less time figuring out what it does and spend more time actually developing the solution. The principles are a part of the many principles promoted by Robert Martin and named by Michael Feathers.
-
-![High-level design.](./1.jpg)<sub>Photo from Unsplash</sub>
 
 ### Single responsibility principle
 Sounds easy but the thing with defining a class is the tendency of most developers to add a lot of functionalities inside it. A good question to always remember when designing is, "What is main the responsibility of your class/component/microservice?" A class should have one, and only one reason to change.
@@ -40,3 +40,13 @@ The ability to separate into much smaller interfaces from a bigger interface is 
 
 ### Dependency inversion principle
 Both the high-level and low-level modules depend on abstractions, and not from each other. This results in the inversion thinking that low-level modules should depend on high-level etc.
+
+![Benefits of SOLID](./2.jpg)<sub>Photo from Unsplash</sub>
+
+### Importance of following SOLID design principles.
+1. Decoupling of the code from other modules or applications. It helps reduce complexity of code.
+2. When code gets decoupled, implementing of new requirements or bug fixes are fast and timely.
+3. The code becomes testable.
+4. The code becomes modular and reusable.
+5. It decreases side-effects of new implementation or bug fixes.
+6. It helps increase readability, extensibility and maintenance.
