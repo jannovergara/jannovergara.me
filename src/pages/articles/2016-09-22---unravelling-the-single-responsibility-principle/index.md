@@ -23,7 +23,8 @@ class Hero {
 private:
   int stren_, agil_, intel_;
   int health_, level_;
-  
+
+  double pos_x_, pos_y_;
 public:
   // Hero attributes
   int GetStrength() const { return stren_; }
@@ -58,16 +59,11 @@ To fix this, we can write classes to separate the hero's abilities and movement.
 ```cpp
 class Hero {
 private:
-  std::string name_;
   int stren_, agil_, intel_;
   int health_, level_;
 
   double pos_x_, pos_y_;
 public:
-
-  std::string GetName() const {return name_; }
-  void SetName(std::string name){ name_ = name; }
-
   int GetStrength() const { return stren_; }
   void SetStrength(int stren){ stren_ = stren; }
   int GetAgility() const { return agil_; }
@@ -100,4 +96,4 @@ public:
 };
 ```
 
-With this design, we are able to separate the hero's attributes, abilities and movement. If in any case that there will be changes in the logic of the movement, we will only be focusing our modifications to _HeroMovement_ class instead of _Hero_.
+With this design, we are able to separate the hero's attributes, abilities and movement. If in any case that there will be changes in the logic of the movement or abilities, we will only be focusing our modifications to _HeroMovement_ or _HeroAbility_ instead of _Hero_ class.
