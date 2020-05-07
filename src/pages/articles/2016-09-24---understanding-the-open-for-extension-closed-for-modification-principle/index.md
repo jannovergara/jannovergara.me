@@ -15,3 +15,24 @@ Software elements e.g. classes, modules, functions, etc. should be open for exte
 The concept may seem really easy, however, one may find that this is the type of design to be practiced with repetition much like any other advanced development task.
 
 ![OCP.](./1.jpg)<sub>Photo from Unsplash</sub>
+
+One best design that conforms with OCP is the idea of a class and creating an instance of class. It allows scalability of the base class. Let's take for example a aircraft carrier class.
+
+```cpp
+class AircraftCarrier {
+private:
+  std::string name_;
+public:
+  std::string GetName(){ return name_; }
+  void SetName(std::string name){ name_ = name; }
+};
+
+AircraftCarrier nimitz;
+nimitz.SetName("Kennedy");
+AircraftCarrier stobar;
+stobar.SetName("Kuznetsov");
+AircraftCarrier stovl;
+stovl.SetName("HarrierJumpJet");
+```
+
+Simply put, we're able to create three different _AircraftCarrier_ objects and we're able to modify each name attribute. We didn't directly modify the _AircraftCarrier_ class to change the name. This is an excellent example for describing OCP.
