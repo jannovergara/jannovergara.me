@@ -10,35 +10,35 @@ tags:
   - "C++03"
 description: "How can we apply the interface segregation principle in actual software design?"
 ---
-This principle follows the guideline that **any client should not be forced to implement any interface which is irrelevant to it.** Instead of creating one big interface, we can break down it to smaller interfaces.
+This principle follows the guideline that **any client should not be forced to implement any interface which is irrelevant to it.** Instead of creating one big interface, we can break it down to smaller interfaces.
 
 A very good example of this is a bar and restaurant where you go to the place to eat. So you enter the place and sit. Waiter comes to your table and leaves you with one menu. You open it to see that it's a bar menu with cocktail drinks, beer, vodka etc. The thing happens when you're with your parents, _They don't drink!_, and they don't know what to order leaving them clueless. Sometimes they would also think that there's nothing else in the menu! So it's important to have separate menus, one for the bar and restaurant to avoid confusion and misinterpretation. Give the bar menu for people who will drink, and the restaurant menu for people who will eat.
 
 ![ISP.](./1.jpg)<sub>Photo from Unsplash</sub>
 
-We can best explain this principle using an example.
+We can also explain this principle using another example with code.
 
 ```cpp
 //EXAMPLE 1
 class Animal {
 private:
-    Movement* _movement;
+    Movement* movement_;
 public:
     void setMovement(Movement* movement);
 };
 
 class Plant {
 private:
-    Movement* _movement;
+    Movement* movement_;
 public:
     void setMovement(Movement* movement);
 };
 
 class Movement {
 private:
-    Animal* _dog;
-    Animal* _cat;
-    Plant* _rose;
+    Animal* dog_;
+    Animal* cat_;
+    Plant* rose_;
 public:
     void walk(Animal* animal);
     void run(Animal* animal);
@@ -62,7 +62,7 @@ public:
 
 class Animal {
 private:
-    AnimalMovement* _movement;
+    AnimalMovement* movement_;
 public:
     void setMovement(AnimalMovement* movement);
 };
@@ -75,16 +75,16 @@ public:
 
 class Plant {
 private:
-    PlantMovement* _movement;
+    PlantMovement* movement_;
 public:
     void setMovement(PlantMovement* movement);
 };
 
 class Movement : public AnimalMovement, public PlantMovement {
 private:
-    Animal* _dog;
-    Animal* _cat;
-    Plant* _rose;
+    Animal* dog_;
+    Animal* cat_;
+    Plant* rose_;
 public:
     void walk(Animal* animal);
     void run(Animal* animal);
@@ -92,4 +92,4 @@ public:
 };
 ```
 
-This design uses abstract base classes and multiple inheritance. `Animal` now only has access to animal related movement methods, and `Plant` only has access to plant movement method, while `Movement` objects can be plugged into both.
+This design uses abstract base classes and multiple inheritance. `Animal` now only has access to animal related movement methods, and `Plant` only has access to plant movement method, while also allowing `Movement` object to be plugged into both.
