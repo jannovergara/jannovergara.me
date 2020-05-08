@@ -18,8 +18,9 @@ A very good example of this is a bar and restaurant where you go to the place to
 
 We can also explain this principle using another example with code.
 
+#### Bad example
+
 ```cpp
-//EXAMPLE 1
 class Animal {
 private:
     Movement* movement_;
@@ -50,9 +51,9 @@ In the above example, there is `Movement` which handles movement from two `Anima
 
 To conform to the ISP, `Animal` must not have access to the `bloom` method, and `Plant` must not have access to the `run` and `walk` methods. This can easily be done by applying the Open Closed Principle. Here is one way to improve the design:
 
-```cpp
-//EXAMPLE 2
+#### Good example
 
+```cpp
 // Animal
 class AnimalMovement {
 public:
