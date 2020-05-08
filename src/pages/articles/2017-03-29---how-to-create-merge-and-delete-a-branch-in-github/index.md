@@ -7,11 +7,11 @@ path: "/posts/how-to-create-merge-and-delete-a-branch-in-github/"
 category: "Software tools"
 tags:
   - "Git"
-description: "There will always be an instance that a developer will need to create a different version of an app either with additional features or with a functionality that he wants to test. Creating a branch from the master branch will help organize the development process."
+description: "There will always be an time that the developer will need to create a different version of an application either with additional features or with a test functionality. Creating a branch from the master branch will help organize the development process."
 ---
 For example from an existing _master_ branch of a _calculator_ application, a developer wants to add new features that will improve the existing functionality. He needs to create a branch from _master_ and implement all the new functionality into that branch, then eventually merging all those modifications back to the _master_ branch.
 
-First clone the _master_,
+First, clone the _master_.
 ```sh
 $ git clone https://www.github.io/jannovergara/calculator.git
 $ cd calculator
@@ -28,8 +28,12 @@ Perform modifications on this branch that will reflect all the new functionaliti
 $ git checkout master
 $ git merge -b calculator_new_version
 ```
-He may want to delete *calculator\_new_version* to keep the repository nice and clean.
+He may want to delete *calculator\_new_version* to keep the repository nice and clean. This will delete the branch from the local repository.
 ```sh
 $ git branch -d calculator_new_version
+```
+To delete the branch from the remote repository:
+```sh
+$ git push origin --delete calculator_new_version
 ```
 If there are conflicts during the _merge_, the developer needs to manually resolve the conflicts. When there are no more issues, the merged source code of the _calculator_ app now contains the new features from *calculator\_new_version*.
