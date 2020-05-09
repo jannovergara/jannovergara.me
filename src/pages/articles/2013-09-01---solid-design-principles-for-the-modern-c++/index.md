@@ -1,6 +1,6 @@
 ---
 title: SOLID design principles for the modern C++
-date: "2016-09-01T23:46:37.121Z"
+date: "2013-09-01T23:46:37.121Z"
 layout: post
 draft: false
 path: "/posts/solid-design-principles-for-the-modern-c++/"
@@ -11,7 +11,7 @@ description: "How does the SOLID design principle change in the modern software 
 ---
 This is a series of entries explaining the fundamental principles of object-oriented programming to the modern C++ development. How to design classes? How to design objects? How to design relationships between classes and objects?
 
-Why do we need a design? It is because the only consistent thing about a software is that it always **change**. Many times, clients do not know their requirements. Technology also change, and it changes a lot. It is always going to change. So designers and developers have to accommodate future changes while they are creating the present day software.
+Why do we need a design? It is because the only consistent thing about a software is that **it is always changing**. Many times, clients do not know their requirements. Technology also change, and it changes a lot. It is always going to change. So designers and developers have to accommodate future changes while they are creating the present day software.
 
 ![High-level design.](./1.jpg)<sub>Photo from Unsplash</sub>
 

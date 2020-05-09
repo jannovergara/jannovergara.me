@@ -1,6 +1,6 @@
 ---
 title: The Liskov substitution principle
-date: "2016-09-25T01:20:32.098Z"
+date: "2013-09-25T01:20:32.098Z"
 layout: post
 draft: false
 path: "/posts/the-liskov-substitution-principle/"

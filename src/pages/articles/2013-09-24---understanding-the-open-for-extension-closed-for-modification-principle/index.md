@@ -1,6 +1,6 @@
 ---
 title: Understanding the open for extension, closed for modification principle
-date: "2016-09-24T14:11:08.615Z"
+date: "2013-09-24T14:11:08.615Z"
 layout: post
 draft: false
 path: "/posts/understanding-the-open-for-extension-closed-for-modification-principle/"

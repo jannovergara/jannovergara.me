@@ -1,6 +1,6 @@
 ---
 title: Unravelling the single responsibility principle
-date: "2016-09-22T23:46:37.121Z"
+date: "2013-09-22T23:46:37.121Z"
 layout: post
 draft: false
 path: "/posts/unravelling-the-single-responsibility-principle/"

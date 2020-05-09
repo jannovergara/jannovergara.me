@@ -1,6 +1,6 @@
 ---
 title: Knowing the interface segregation principle
-date: "2016-09-27T01:20:32.098Z"
+date: "2013-09-27T01:20:32.098Z"
 layout: post
 draft: false
 path: "/posts/knowing-the-interface-segregation-principle/"

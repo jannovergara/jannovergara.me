@@ -1,6 +1,6 @@
 ---
 title: Learning the dependency inversion principle
-date: "2016-10-05T16:11:37.443Z"
+date: "2013-10-05T16:11:37.443Z"
 layout: post
 draft: false
 path: "/posts/learning-the-dependency-inversion-principle/"
