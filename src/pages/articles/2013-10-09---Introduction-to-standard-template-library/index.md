@@ -4,7 +4,7 @@ date: "2013-10-09T11:07:22.996Z"
 layout: post
 draft: false
 path: "/posts/introduction-to-standard-template-library/"
-category: "Library"
+category: "Software Library"
 tags:
   - "STL"
   - "C++03"
