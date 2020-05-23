@@ -14,7 +14,7 @@ This principle is introduced by Barbara Liskov which states that **"objects in a
 
 If a program module is using a base class, then the reference to the base class can be replaced with a derived class without affecting the functionality of the program module or in other terms, without negative side effects.
 
-![Liskov.](./1.jpg)<sub>Photo from Unsplash</sub>
+![Liskov.](./1.jpg "Penguin")<sub>Photo from Unsplash</sub>
 
 Given a parent and its three children, any of the children should be able to substitute the parent in terms of providing the functionality as promised by the parent. 
 

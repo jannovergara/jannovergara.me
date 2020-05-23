@@ -11,7 +11,7 @@ description: "Keywords in the blog."
 ---
 What are the most popular words for a software development blog?
 
-![SEO](./1.jpg)<sub>Photo from Unsplash</sub>
+![SEO](./1.jpg "SEO")<sub>Photo from Unsplash</sub>
 
 how to create a blog
 how to write a blog

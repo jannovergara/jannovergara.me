@@ -14,11 +14,11 @@ description: "If you're not using STL in your development, you're missing the ve
 
 STL is standard template library for an advanced, high-level programming language C++. STL is at the heart of C++ Standard Library. It separates the data store and data manipulation.
 
-![Intro to STL](./1.jpg)<sub>Photo from Unsplash</sub>
+![Intro to STL](./1.jpg "Library")<sub>Photo from Unsplash</sub>
 
 STL has _Algorithms_ and _Containers_. _Containers_ contain data while _Algorithms_ operate on the data contained in the _Containers_. STL also provide another set of modules called _Iterators_. Each container is required to provide a common interface defined by _Iterators_. _Iterator_ can iterate each item inside the _Container_, so the _Algorithm_ instead of working in the _Container_ directly, it only works on the iterator. The algorithm doesn't know directly the container that it is working on. It only knows about the iterator. That improves the level of code reuse in C++.
 
-![Intro to STL2](./2.jpg)
+![Intro to STL2](./2.jpg "The STL.")
 
 Let's see a _sorting_ example using STL.
 

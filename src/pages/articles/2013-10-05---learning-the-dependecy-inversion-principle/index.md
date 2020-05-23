@@ -16,7 +16,7 @@ One most common analogy to this principle is the role of the CEO of a company an
 
 In other words, abstractions should not depend on the details, rather the details should depend on abstractions.
 
-![DIP.](./1.jpg)<sub>Photo from Unsplash</sub>
+![DIP.](./1.jpg "CEO")<sub>Photo from Unsplash</sub>
 
 To have a clearer perspective, let's take a look at the example below. This is the same example as what we have in ISP.
 

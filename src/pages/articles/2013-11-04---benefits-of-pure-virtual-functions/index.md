@@ -12,7 +12,7 @@ description: "Here we discuss the importance of pure virtual functions."
 ---
 Have you ever used pure virtual functions before?
 
-![Pure virtual](./1.jpg)<sub>Photo from Unsplash</sub>
+![Pure virtual](./1.jpg "Horses")<sub>Photo from Unsplash</sub>
 
 Pure virtual functions are used to make the class abstract, so that it can't be instantiated, but a child class can override the pure virtual methods to form a concrete class. A **pure virtual function** (or abstract function) in C++ is a virtual function for which we don't have implementation, we only declare it. A pure virtual function is declared *by assigning 0 in declaration*. This is a good way to define an interface in C++.
 

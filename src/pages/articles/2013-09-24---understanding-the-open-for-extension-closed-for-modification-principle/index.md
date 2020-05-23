@@ -14,7 +14,7 @@ Software elements e.g. classes, modules, functions, etc. should be open for exte
 
 The concept may seem really easy, however, one may find that this is the type of design to be practiced with repetition much like any other advanced development task.
 
-![OCP.](./1.jpg)<sub>Photo from Unsplash</sub>
+![OCP.](./1.jpg "Aircraft carrier.")<sub>Photo from Unsplash</sub>
 
 One best design that conforms with OCP is the idea of a class and creating an instance of class. It allows scalability of the base class. Let's take for example a aircraft carrier class.
 

@@ -11,7 +11,7 @@ description: "This is an object-oriented approach that shows inheritance of clas
 ---
 In this tutorial, we will show how object oriented paradigm can be applied in C++ development. Covered in this sample _Car_ program the relationship of the general _Car_ class with _Sedan_ class.
 
-![Tutorial1](./1.jpg)<sub>Photo from Unsplash</sub>
+![Tutorial1](./1.jpg "Sedan")<sub>Photo from Unsplash</sub>
 
 C++ code.
 

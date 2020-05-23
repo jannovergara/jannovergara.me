@@ -14,7 +14,7 @@ This principle follows the guideline that **any client should not be forced to i
 
 A very good example of this is a bar and restaurant where you go to the place to eat. So you enter the place and sit. Waiter comes to your table and leaves you with one menu. You open it to see that it's a bar menu with cocktail drinks, beer, vodka etc. The thing happens when you're with your parents, _They don't drink!_, and they don't know what to order leaving them clueless. Sometimes they would also think that there's nothing else in the menu! So it's important to have separate menus, one for the bar and restaurant to avoid confusion and misinterpretation. Give the bar menu for people who will drink, and the restaurant menu for people who will eat.
 
-![ISP.](./1.jpg)<sub>Photo from Unsplash</sub>
+![ISP.](./1.jpg "Restaurant and bar")<sub>Photo from Unsplash</sub>
 
 We can also explain this principle using another example with code.
 

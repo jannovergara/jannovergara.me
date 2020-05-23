@@ -11,7 +11,7 @@ description: "This is an object-oriented approach of a simple version of the pop
 ---
 In this tutorial, we will show how object oriented paradigm can be applied in C++ development. Covered in this is a sample _Fighter_ and _Battle_ program showing the relationship of the _Fighter_ class as being used in the _Battle_ class.
 
-![Tutorial2](./1.jpg)<sub>Photo from Unsplash</sub>
+![Tutorial2](./1.jpg "Sleeping cat")<sub>Photo from Unsplash</sub>
 
 C++ code.
 

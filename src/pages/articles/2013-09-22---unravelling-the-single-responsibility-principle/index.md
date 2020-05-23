@@ -12,7 +12,7 @@ description: "Getting to know SRP in a more detailed perspective."
 ---
 In a nutshell, **"A class should only have a single reason to change."** There is separation of distinct concerns in classes handling different, independent tasks or problems. Every module or class should have a responsibility over a single part of the functionality provided by the software, and that responsiblity should be entirely encapsulated by the class.
 
-![SRP.](./1.jpg)<sub>Photo from Unsplash</sub>
+![SRP.](./1.jpg "A robot's responsibility.")<sub>Photo from Unsplash</sub>
 
 We can describe this in a more C++ approach. Let's consider creating a game hero class with attributes, abilities and movement.
 

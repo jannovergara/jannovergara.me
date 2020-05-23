@@ -12,7 +12,7 @@ description: "How to do simple exception handling?"
 ---
 In this tutorial, we will show how basic exception handling is implemented.
 
-![Tutorial3](./1.jpg)<sub>Photo from Unsplash</sub>
+![Tutorial3](./1.jpg "Wrong way sign")<sub>Photo from Unsplash</sub>
 
 C++ code.
 

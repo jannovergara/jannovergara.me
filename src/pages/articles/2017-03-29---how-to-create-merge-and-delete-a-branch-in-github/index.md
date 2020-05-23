@@ -17,7 +17,7 @@ $ git clone https://www.github.io/jannovergara/calculator.git
 $ cd calculator
 ```
 
-![Git branch](./1.jpg)<sub>Photo from Unsplash</sub>
+![Git branch](./1.jpg "Calculator")<sub>Photo from Unsplash</sub>
 
 Next, create a branch from the _master_ branch. Let's name it as *calculator\_new_version*.
 ```sh

@@ -13,23 +13,23 @@ description: "A software development process involves multiple iterations of tes
 ---
 Great projects need efficient tools. Jenkins specializes in build automation for continuous integration in software development.
 
-![Jenkins](./1.jpg)<sub>Photo from Unsplash</sub>
+![Jenkins](./1.jpg "Gear")<sub>Photo from Unsplash</sub>
 
 To download Jenkins, visit the [site](https://www.jenkins.io/). I downloaded Jenkins for Mac. Installation went smooth and it opens Safari browser as its main window. It will need an admin user to initiate integration, so a quick registration setup went through.
 
 This is how Jenkins load in Safari.
 
-![Jenkins setup](./2.png)
+![Jenkins setup](./2.png "Jenkins 1")
 
 Let's _create new jobs_.
 
-![Jenkins create new jobs](./3.png)
+![Jenkins create new jobs](./3.png "Jenkins 2")
 
 In _Enter an item name_, input the sample project name e.g. _Hello World_ then select _Freestyle project_ > _OK_. This will create a new Jenkins project.
 
 Next window will be a series of configuration settings. 
 
-![Jenkins configuration](./4.png)
+![Jenkins configuration](./4.png "Jenkins 3")
 
 We will initially follow this basic configuration:
 #### General
