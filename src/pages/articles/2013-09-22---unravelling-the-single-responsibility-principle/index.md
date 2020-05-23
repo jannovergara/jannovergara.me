@@ -98,5 +98,5 @@ public:
 
 With this design, we are able to separate the hero's attributes, abilities and movement. If in any case that there will be changes in the logic of the movement or abilities, we will only be focusing our modifications to _HeroMovement_ or _HeroAbility_ instead of _Hero_ class.
 
-# Takeaway initiative
+## Takeaway initiative
 _"You can be the architect of your habits, rather than the victim of them! - James Clear"_

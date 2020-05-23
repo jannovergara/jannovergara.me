@@ -51,5 +51,5 @@ Both the high-level and low-level modules depend on abstractions, and not from e
 5. It decreases side-effects of new implementation or bug fixes.
 6. It helps increase readability, extensibility and maintenance.
 
-# Takeaway initiative
+## Takeaway initiative
 _"We must all suffer from one of two pains: the pain of discipline or the pain of regret. The difference is discipline weighs ounces while regret weighs tons. - Jim Rohn"_
