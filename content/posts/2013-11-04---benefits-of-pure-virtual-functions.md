@@ -1,5 +1,5 @@
 ---
-title: Introduction to standard template library
+title: Benefits of pure virtual functions
 date: "2013-11-04T02:13:20.271Z"
 template: "post"
 draft: false
