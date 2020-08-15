@@ -55,4 +55,4 @@ TLD or COM name servers know exactly which ANS to use with the help of the domai
 With these lookup processes, the resolving name server will be able to query the specific ANS and get the IP address.
 
 # Takeaway initiative
-_"HNo one saves us but ourselves. No one can and no one may. We ourselves must walk the path. - Gautama Buddha"_
+_"No one saves us but ourselves. No one can and no one may. We ourselves must walk the path. - Gautama Buddha"_
