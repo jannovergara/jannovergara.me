@@ -31,11 +31,28 @@ round-trip min/avg/max/stddev = 167.808/182.591/196.632/11.779 ms
 
 ## How does it work?
 
-![DNS2](/media/post-18-2.jpg "DNS Lookup.")<sub>Photo from Unsplash</sub>
+![DNS2](/media/post-18-2.jpg "DNS Lookup.")
 
 When you type in *jannovergara.me* in the web browser (e.g. Chrome, Safari, Firefox), you will actually be looking for *jannovergara.me.*. It is with a dot (.). You can actually try it out!
 
-The dot represents the internet's name space. It is the root. When you search for *jannovergara.me.*, your browser and computer OS will determine if IP address is already in its memory cache. If they can't find it, the OS is configured to ask a resolving name server for IP addresses it does not know. The resolving name server may or may not know about the IP address. It should know though where is the root name server. It then sends a query to the root name server. The root name server redirects the resolving name server to the com name server or top level domain name server. Again, it will redirect the resolving name server to the authoritative name servers. TLD or COM name servers know exactly which ANS to use with the help of the domain's registrar. When a domain is purchased, the registrar is told which authoritative name servers that doain should use. They notify the organization responsible for the top level domain and tell them to update the TLD name servers. With this, the resolving name server will be able to query the specific ANS and get the IP address.
+The dot represents the internet's name space. It is the root. When you search for *jannovergara.me.*, your browser and computer OS will determine if IP address is already in its memory cache. If they can't find it, the OS is configured to ask a resolving name server for IP addresses it does not know.
+
+## RESOLVING name server
+The resolving name server may or may not know about the IP address. It should know though where is the root name server.
+
+## ROOT name server
+It then sends a query to the root name server.
+
+## TLD or COM name server
+The root name server redirects the resolving name server to the com name server or top level domain name server.
+
+## AUTHORITATIVE name server
+Again, it will redirect the resolving name server to the authoritative name servers.
+
+## DOMAIN REGISTRAR
+TLD or COM name servers know exactly which ANS to use with the help of the domain's registrar. When a domain is purchased, the registrar is told which authoritative name servers that doain should use. They notify the organization responsible for the top level domain and tell them to update the TLD name servers.
+
+With these lookup processes, the resolving name server will be able to query the specific ANS and get the IP address.
 
 # Takeaway initiative
 _"HNo one saves us but ourselves. No one can and no one may. We ourselves must walk the path. - Gautama Buddha"_
