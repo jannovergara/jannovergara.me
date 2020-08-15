@@ -96,3 +96,6 @@ public:
 ```
 
 This design uses abstract base classes and multiple inheritance. `Animal` now only has access to animal related movement methods, and `Plant` only has access to plant movement method, while also allowing `Movement` object to be plugged into both.
+
+# Takeaway initiative
+_"Darkness cannot drive out darkness; only light can do that. Hate cannot drive out hate; only love can do that. - Martin Luther King, Jr."_

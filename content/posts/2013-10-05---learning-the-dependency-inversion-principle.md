@@ -63,3 +63,6 @@ public:
 ```
 
 Both `AnimalMovement` and `PLantMovement` serve as the high level classes and `Movement` serves as the low level class, which implements the abstractions. This is an application of **pure virtual** functions e.g. `run`, `walk` and `bloom`. These pure virtual functions are the abstractions and the actual implementations are found in the derived class.
+
+# Takeaway initiative
+_"I can calculate the motion of heavenly bodies, but not the madness of people. - Isaac Newton"_

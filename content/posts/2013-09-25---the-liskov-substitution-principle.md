@@ -85,3 +85,6 @@ public:
 ```
 
 In the above design, it is clear that the _Dove_ class is a flying kind of a bird and _Penguin_ class is bird without the altitude information, which leads to a better representation of classes following LSP.
+
+# Takeaway initiative
+_"Design is not just what it looks like and feels like. Design is how it works. - Steve Jobs"_

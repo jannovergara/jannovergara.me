@@ -39,5 +39,5 @@ stovl.SetName("HarrierJumpJet");
 
 Simply put, we're able to create three different _AircraftCarrier_ objects and we're able to modify each name attribute. We didn't directly modify the _AircraftCarrier_ class to change the name. This is an excellent example for describing OCP.
 
-## Takeaway initiative
+# Takeaway initiative
 _"Imagination is more important than knowledge. For knowledge is limited, whereas imagination embraces the entire world, stimulating progress, giving birth to evolution. - Albert Einstein"_

@@ -42,3 +42,7 @@ Some important important facts:
 2. We can have pointers and references of abstract class type.
 3. If we do not override the pure virtual function in derived class, then derived class also becomes abstract class.
 4. Abstract classes cannot be instantiated.
+
+
+# Takeaway initiative
+_"If you design your own language, there are a thousands of sort of amateur language designer pitfalls. - Guido van Rossum"_

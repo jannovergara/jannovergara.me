@@ -58,3 +58,6 @@ $V1
 ```
 
 Cheers!
+
+# Takeaway initiative
+_"I do not write for this generation. I am writing for other ages. If this could read me, they would burn my books, the work of my whole life. On the other hand, the generation which interprets these writings will be an educated generation; they will understand me and say: 'Not all were asleep in the nighttime of our grandparents. - Jose Rizal"_

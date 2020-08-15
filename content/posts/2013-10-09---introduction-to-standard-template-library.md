@@ -44,3 +44,6 @@ sort(i1, i2);           // vec: {2, 3, 9}
 5. It is standardized, guaranteed to be available.
 6. It is a good model for writing a library.
 7. Good knowledge of data structures and algorithms benefits in acing a job interview.
+
+# Takeaway initiative
+_"C makes it easy to shoot yourself in the foot; C++ makes it harder, but when you do it blows your whole leg off. - Bjarne Stroustrup"_

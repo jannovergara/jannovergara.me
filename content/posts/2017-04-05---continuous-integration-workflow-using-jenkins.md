@@ -51,3 +51,6 @@ Configuration for this section depends on your working environment. For my purpo
 
 #### Post-build Actions
 None
+
+# Takeaway initiative
+_"C is quirky, flawed, and an enormous success. - Dennis Ritchie"_
