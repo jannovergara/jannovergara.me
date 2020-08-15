@@ -12,35 +12,54 @@ description: "In this entry, we will see the relevance of multiple inheritance a
 socialImage: "/media/post-6-1.jpg"
 ---
 
-#### What is STL?
+This principle is more straight-forward than the other SOLID principles because it relates to a real-world pattern.
 
-STL is standard template library for an advanced, high-level programming language C++. STL is at the heart of C++ Standard Library. It separates the data store and data manipulation.
+One most common analogy to this principle is the role of the CEO of a company and the employees. As a CEO, you wouldn't drive the truck and make product delivery, you wouldn't pick SEO keywords for the corporate website, you wouldn't do the accounting calculations for the tax statements. Instead, it would be your job to manage the organization and delegate responsibility to the executives that report to you. Spending time with low-level work will not translate to better management of the company. In a nutshell, **high level objects should not depend on low level implementations.**
 
-![Intro to STL](/media/post-7-1.jpg "Library")<sub>Photo from Unsplash</sub>
+In other words, abstractions should not depend on the details, rather the details should depend on abstractions.
 
-STL has _Algorithms_ and _Containers_. _Containers_ contain data while _Algorithms_ operate on the data contained in the _Containers_. STL also provide another set of modules called _Iterators_. Each container is required to provide a common interface defined by _Iterators_. _Iterator_ can iterate each item inside the _Container_, so the _Algorithm_ instead of working in the _Container_ directly, it only works on the iterator. The algorithm doesn't know directly the container that it is working on. It only knows about the iterator. That improves the level of code reuse in C++.
+![DIP.](/media/post-6-1.jpg "Suit tucked-in")<sub>Photo from Unsplash</sub>
 
-![Intro to STL2](/media/post-7-2.jpg "The STL.")
-
-Let's see a _sorting_ example using STL.
+To have a clearer perspective, let's take a look at the example below. This is the same example as what we have in ISP.
 
 ```cpp
-std::vector<int> vec;   // initialize a vector
-vec.push_back(3);       // add elements to vector
-vec.push_back(2);
-vec.push_back(9);       // vec: {3, 2, 9}
+// Animal
+class AnimalMovement {
+public:
+    virtual void run(Animal* animal) = 0;
+    virtual void walk(Animal* animal) = 0;
+}
 
-vector<int>::iterator i1 = vec.begin(); // start of iterator
-vector<int>::iterator i2 = vec.end();   // end of iterator
+class Animal {
+private:
+    AnimalMovement* _movement;
+public:
+    void setMovement(AnimalMovement* movement);
+};
 
-sort(i1, i2);           // vec: {2, 3, 9}
+// Plant
+class PlantMovement {
+public:
+    virtual void bloom(Plant* plant) = 0;
+}
+
+class Plant {
+private:
+    PlantMovement* _movement;
+public:
+    void setMovement(PlantMovement* movement);
+};
+
+class Movement : public AnimalMovement, public PlantMovement {
+private:
+    Animal* _dog;
+    Animal* _cat;
+    Plant* _rose;
+public:
+    void walk(Animal* animal);
+    void run(Animal* animal);
+    void bloom(Plant* plant);
+};
 ```
 
-#### Good reasons to use C++ Standard Template Library
-1. Code reusability. No need to re-invent the wheel.
-2. It is efficient. Is is fast and uses less resources. Modern C++ compilers are tuned to optimize for C++ STL.
-3. It is peer-reviewed by a peer-review international committee.
-4. It is a readable code.
-5. It is standardized, guaranteed to be available.
-6. It is a good model for writing a library.
-7. Good knowledge of data structures and algorithms benefits in acing a job interview.
+Both `AnimalMovement` and `PLantMovement` serve as the high level classes and `Movement` serves as the low level class, which implements the abstractions. This is an application of **pure virtual** functions e.g. `run`, `walk` and `bloom`. These pure virtual functions are the abstractions and the actual implementations are found in the derived class.
