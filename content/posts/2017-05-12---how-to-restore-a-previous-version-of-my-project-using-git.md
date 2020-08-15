@@ -31,5 +31,5 @@ Either way, you'll end up with a messed up code. A little trick to make a cleane
 git checkout -b old-site 721c77
 ```
 
-## Takeaway initiative
+# Takeaway initiative
 _"Happiness is when what you think, what you say, and what you do are in harmony. - Mahatma Gandhi"_
