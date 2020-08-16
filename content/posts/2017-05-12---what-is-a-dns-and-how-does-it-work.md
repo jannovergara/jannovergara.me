@@ -40,8 +40,11 @@ The dot represents the internet's name space. It is the root. When you search fo
 ## RESOLVING name server
 The resolving name server may or may not know about the IP address. It should know though where is the root name server.
 
+## ISP
+In between the user pc and the root name server is the ISP or the Internet Service Provider. The ISP can also store the IP address of the website from its memory cache. If the website is visited for the first time, then the IP cannot be found there.
+
 ## ROOT name server
-It then sends a query to the root name server.
+It then sends a query to the root name server. It knows where to find the com server for the website.
 
 ## TLD or COM name server
 The root name server redirects the resolving name server to the com name server or top level domain name server.
