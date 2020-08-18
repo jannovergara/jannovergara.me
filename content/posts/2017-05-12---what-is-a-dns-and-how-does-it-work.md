@@ -53,7 +53,7 @@ The root name server redirects the resolving name server to the com name server 
 Again, it will redirect the resolving name server to the authoritative name servers.
 
 ## DOMAIN REGISTRAR
-TLD or COM name servers know exactly which ANS to use with the help of the domain's registrar. When a domain is purchased, the registrar is told which authoritative name servers that doain should use. They notify the organization responsible for the top level domain and tell them to update the TLD name servers.
+TLD or COM name servers know exactly which ANS to use with the help of the domain's registrar. When a domain is purchased, the registrar is told which authoritative name servers that domain should use. They notify the organization responsible for the top level domain and tell them to update the TLD name servers.
 
 With these lookup processes, the resolving name server will be able to query the specific ANS and get the IP address.
 
